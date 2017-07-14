@@ -28,6 +28,7 @@ public class SingletonController {
 	@RequestMapping(value="/springbeans.html",method=RequestMethod.GET)
 	public ModelAndView singletonBeanGet(HttpServletRequest request,HttpServletResponse response,ModelMap map)
 	{
+		System.out.println("hello m in github");
 		System.out.println(""+employeeDetails.hashCode());
 		map.put("beanHashCode",employeeDetails.hashCode());
 		return new ModelAndView("globalMessage");
